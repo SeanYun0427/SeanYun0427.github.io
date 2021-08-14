@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b18e6a6ad6.js" crossorigin="anonymous"></script>
+    <title>SeungwooYun</title>
+
+    <script type="text/javascript">
+        function div_hide() {
+         document.getElementById("hide-btns").style.display = "none";
+         document.getElementById("hiring-box").style.display = "inline-block";
+        }
+    </script>
+ 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+            text-align: center; /*content align to center*/
+            margin: 0 auto; /*same margin for left and right*/
+            width: 90%;
+            max-width: 1100px;
+        }
+        header{
+            background-color: whitesmoke;
+            margin: 0;
+        }
+        header h2{
+            margin-bottom: 0;
+        }
+        main{
+            background-color: cyan;
+        }
+        #btn_group{
+            margin-top: 20px;
+            margin-bottom: 35px;
+            background-color: cyan;
+        }
+        #btn1{
+            border-radius: 10%;
+            margin-right: 15px;
+            background-color:black; 
+            text-align:center; 
+            cursor: pointer; 
+            color:white; 
+
+            transition:all 0.9s, color 0.3;
+        }
+        #btn1:hover{
+            color:#fff;
+            box-shadow: 200px 0 0 0 rgba(253, 253, 253, 0.25) inset, 
+                        -200px 0 0 0 rgba(0,0,0,0.25) inset;
+
+        }
+        #btn2{
+            border-radius: 10%;
+            text-align:center; 
+            cursor: pointer; 
+        }
+        #btn2:hover{
+            color:#fff;
+            box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset, 
+                        -200px 0 0 0 rgba(0,0,0,0.25) inset;
+        }
+        
+        #mypic{
+            width: 25%;
+            height: 25%;
+            margin-top: 35px;
+        }
+        #myinfo{
+            background-color: skyblue;
+            display: flex;
+        }
+        #aboutme{
+            width: 45%;
+            text-align: left;
+            margin: 10px 40px;
+        }
+        #basicinfo{
+            width: 45%;
+            text-align: left;
+            margin: 10px 40px;
+        }
+        #basicinfo p {
+            margin-top: 0px;
+        }
+        #container{
+            width: 100%;
+            display: flex;
+        }
+        #a{
+            width: 45%;
+        }
+
+        #b{
+            
+            width: 45%;
+        }
+
+        #edu{
+            background-color: paleturquoise
+        }
+        #edu h3{
+            margin-top: 0px;
+            padding-top: 15px;
+        }
+        .edu-box{
+            display: flex;
+        }
+        .left-hand{
+            background-color:navajowhite;
+            width: 20%;
+            height: 120px;
+            margin-left: 70px;
+            margin-bottom: 15px;
+        }
+        .right-hand{
+            background-color:white;
+            width: 75%;
+            height: 120px;
+            margin-right: 70px;
+            margin-bottom: 15px;
+            text-align: left;
+            
+        }
+        .right-hand h4{
+            margin-bottom: 0;
+        }
+
+        .right-hand h6{
+            margin: 0;
+        }
+        .right-hand p{
+            font-size: 9px;
+        }
+        .record{
+            margin-left: 20px;
+        }
+        
+
+        footer{
+            background-color: whitesmoke;
+            font-family: 'Lobster', cursive;
+            text-align: left;
+        }
+       #fieldset{
+           width: 30%;
+       }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2>Yun's Website</h2>
+    </header>
+    <main>
+        <div id="intro">
+            <img id="mypic" src="meAndMydog.jpg" alt="meAndMydog">
+            <h1>Seungwoo Yun</h1>
+            <h6>Aspiring Web Developer, Software Engineer</h6>
+        
+            <div id="btn_group">
+                <button id="btn1"><i class="far fa-file"></i> Resume </button>
+                <a href="#fieldset"><button id="btn2"><i class="fas fa-id-card-alt"></i> Contact me </button></a>
+            </div>
+        </div>
+
+        <div id="myinfo">
+            <div id="aboutme">
+                <h3>About me</h3>
+                <p> Hello, I'm a man dreaming of becoming a world-class software developer.
+                    I am interested in web development and have a lot of ideas for creating 
+                    websites or mobile applications. I will do business after I acquire the 
+                    skills to implement my ideas. And I will make a lot of money and live 
+                    happily with my family.
+                </p>
+            </div>
+            <div id="basicinfo">
+                <h3>Basic Infomation</h3>
+                    <div id="container">
+                        <div id="a">
+                            <p>AGE:</p>
+                            <p>EMAIL:</p>
+                            <p>LANGUAGE:</p>
+                        </div>
+                        <div id="b">
+                            <p>31</p>
+                            <p>Sean.ysw90@gmail.com</p>
+                            <p>English, Korean</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="edu">
+            <h3>Education</h3>
+            <div class="edu-box">
+                <div class="left-hand">
+                    <h6>2009 - 2016(graduated)</h6>
+                    <h4>Bachelor's Degree</h4>
+                </div>
+                <div class="right-hand">
+                    <div class="record">
+                        <h4>Bachelor's Degree</h4>
+                        <h6>Seowon University in Korea</h6>
+                        <p>Under the supervision of Dr. Kim<br>
+                        Awarded with scholarships in the world.</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="edu-box">
+                <div class="left-hand">
+                    <h6>2021 - 2022(expected)</h6>
+                    <h4>Deploma</h4>
+
+                </div>
+                <div class="right-hand">
+                    <div class="record">
+                        <h4>Deploma</h4>
+                        <h6>Seneca College</h6>
+                        <p>Under the supervision of Dr. Sharmin<br>
+                        Awarded with scholarships in the world.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </main>
+    <footer>
+        <form id="form1" method="POST" action="https://httpbin.org/post">
+            <fieldset id = "fieldset" name="fieldset">
+                <legend id="field">Contact Me</legend>
+                <label for ="fname">Fisrt name:</label><br>
+                <input type="text" id="fname" name="firstname" placeholder="First Name goes here"><br>
+                <label for ="Lname">Last name:</label><br>
+                <input type="text" id="Lname" name="lastname" placeholder="Last name goes here"><br>
+                <label for ="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="abcdef@email.com"><br>
+                <label for ="city">City:</label><br>
+                <input list = "cities" id="city" name="city"><br>
+                <datalist id = "cities">
+                    <option value="Toronto"></option>
+                    <option value="Montreal"></option>
+                    <option value="Otawa"></option>
+                    <option value="Quebec"></option>
+                    <option value="Niagara"></option>
+                </datalist>
+                <label for ="postal">Postal Code:</label><br>
+                <input type="text" id="postal" name="postal" pattern="^[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d$" placeholder="a1a2b2"><br>
+                
+                <p>Please select your purpose:</p>
+                <div id="hide-btns">
+                    <input type="radio" id="question" name="purpose" value="question">
+                    <label for="question">Question</label><br>
+                    <input type="radio" id="comment" name="purpose" value="comment">
+                    <label for="comment">Comment</label><br>
+                </div>
+                <input type="radio" id="hiring" name="purpose" value="hiring" onclick="div_hide();">
+                <label for="hiring">Hiring</label><br>
+                <div id="hiring-box" style="display: none;">
+                    <label for ="hourly-rate">Hourly-rate:</label><br>
+                    <input type="text" id="hourly-rate" name="hourly-rate" placeholder="hourly-rate">
+                </div>
+                
+                <p>Please write your message:</p>
+                <textarea id="msg" name="msg" rows="5" cols="20" placeholder="thank you :)"></textarea><br>
+                                
+                <label for ="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phonenumber" pattern="\d{3}\d{3}\d{4}"><br>
+                <br>
+                <input type="submit" value="Submit">
+            </fieldset> 
+    </footer>
+
+
+</form>
+
+</body>
+</html>
